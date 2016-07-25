@@ -1,9 +1,5 @@
 # qtcef3
-<<<<<<< HEAD
+
 qt5.5.1,cef_3.2454.1344
 
-Hello~
-=======
-qt5.5.1,cef_3.2454.1344 
-
->>>>>>> dfbe0e622584cb585e1856556f0939ce8249b916
+![image](https://github.com/louk78/qtcef3/blob/master/qtcef3wnd.PNG)
