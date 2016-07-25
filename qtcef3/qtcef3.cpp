@@ -2,27 +2,49 @@
 #include <QJsonDocument>
 #include <QJsonArray>
 #include <QDebug>
+#include "cefview.h"
 
 qtcef3::qtcef3(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
 	setWindowFlags(Qt::FramelessWindowHint);
+	m_pCefView = NULL;
+	
 }
+
 
 qtcef3::~qtcef3()
 {
-
+	if (m_pCefView)
+	{
+		delete m_pCefView;
+	}
 }
 
 void qtcef3::closeEvent(QCloseEvent *e)
 {
-
+	
 }
 
 void qtcef3::resizeEvent(QResizeEvent *e)
 {
 	centralWidget()->resize(size());
+}
+
+void qtcef3::showEvent(QShowEvent *e)
+{
+}
+
+void qtcef3::CreateBrowser()
+{
+	if (m_pCefView == NULL)
+	{
+		m_pCefView = new CefView(this);
+	   m_pCefView->resize(width(), height());
+		m_pCefView->CreateBrowser("");
+		setCentralWidget(m_pCefView);
+	}
 }
 
 void qtcef3::JsTocppMessageParse(std::string message, CefRefPtr<Callback> &callback)
