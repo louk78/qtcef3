@@ -9,7 +9,6 @@ int main(int argc, char *argv[])
 	QApplication a(argc, argv);
 	HINSTANCE hInstance = ::GetModuleHandle(NULL);	
 	CefEnableHighDPISupport();
-
 	void* sandbox_info = NULL;
 
 	CefMainArgs main_args(hInstance);
@@ -17,7 +16,6 @@ int main(int argc, char *argv[])
 	int exit_code = CefExecuteProcess(main_args, app.get(), sandbox_info);
 	if (exit_code >= 0)
 		return exit_code;
-	
 	CefSettings settings;
 	settings.multi_threaded_message_loop = TRUE;
 	CefInitialize(main_args, settings, app.get(), sandbox_info);

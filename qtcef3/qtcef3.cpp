@@ -59,7 +59,7 @@ void qtcef3::JsTocppMessageParse(std::string message, CefRefPtr<Callback> &callb
 		for (int i = 0; i < jsonArray.size(); i++)
 		{
 			QJsonObject tempObj = jsonArray[i].toObject();
-			JsTocppMessageFuncPro(tempObj);
+			JsTocppMessageFuncPro(tempObj,callback);
 		}
 	}
 	else
@@ -70,7 +70,7 @@ void qtcef3::JsTocppMessageParse(std::string message, CefRefPtr<Callback> &callb
 }
 
 
-void qtcef3::JsTocppMessageFuncPro(QJsonObject jsonObjMsg)
+void qtcef3::JsTocppMessageFuncPro(QJsonObject jsonObjMsg,CefRefPtr<Callback> &callback)
 {
 	QString funcName;
 	funcName = jsonObjMsg["name"].toString();

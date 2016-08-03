@@ -17,7 +17,7 @@ public:
 	~qtcef3();
 public:
 	void JsTocppMessageParse(std::string message, CefRefPtr<Callback> &callback);
-	void JsTocppMessageFuncPro(QJsonObject jsonObjMsg);
+	void JsTocppMessageFuncPro(QJsonObject jsonObjMsg,CefRefPtr<Callback> &callback);
 	void CreateBrowser();
 
 public:
