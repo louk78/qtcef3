@@ -1,6 +1,7 @@
 # qtcef3
 
 qt5.5.1,cef_3.2454.1344
+UI and business logic highly separate architecture
 
 Screenshot
 -------
