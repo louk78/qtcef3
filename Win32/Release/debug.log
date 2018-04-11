@@ -1,0 +1,16 @@
+[0724/110104:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0411/184847:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0411/185006:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0411/185023:ERROR:gles2_cmd_decoder.cc(12822)] [GroupMarkerNotSet(crbug.com/242999)!:4C8F1803]GL ERROR :GL_INVALID_OPERATION : glCreateAndConsumeTextureCHROMIUM: invalid mailbox name
+[0411/185024:ERROR:gles2_cmd_decoder.cc(6833)] [GroupMarkerNotSet(crbug.com/242999)!:4C8F1803]RENDER WARNING: texture bound to texture unit 0 is not renderable. It maybe non-power-of-2 and have incompatible texture filtering.
+[0411/185024:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0411/185028:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0411/185121:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0411/185127:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0411/185333:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0411/185335:ERROR:ipc_channel_win.cc(435)] pipe error: 232
+[0411/185335:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0411/185740:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0411/185742:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0411/185912:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0411/185926:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
